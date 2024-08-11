@@ -43,14 +43,6 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             scoreboard.reset()
             snake.reset()
-"""
-****For loop explained****: 
-- The range function is formatted like (start, stop, step)
-- Goal of loop is to make each turtle (except the first) move to the position of where the turtle in front of it was
-- Loop runs, taking values from the final index to the very second index
-- In summary, we get the x and y coordinate of the turtle at the last index to the second index so we can move 
-them to where the adjacent segment was, respectively.
-"""
 
 
 screen.exitonclick()
